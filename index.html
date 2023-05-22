@@ -1,76 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content=""> <!--here define keywords for search engines-->
-    <meta name="description" content=""> <!--here define a description of the webpage-->
-    <meta name="author" content=""> <!--our names here-->
-    <meta http-equiv="refresh" content="30"> <!--do we want to refresh the page?????-->
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="">
+  <!--here define keywords for search engines-->
+  <meta name="description" content="">
+  <!--here define a description of the webpage-->
+  <meta name="author" content="">
+  <!--our names here-->
+  <meta http-equiv="refresh" content="30">
+  <!--do we want to refresh the page?????-->
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body id="home">
-    <header class="header">
-        <h1>Header</h1>
-        <p>My supercool header</p>
-    </header>
+  <header class="header">
+    <h1>Header</h1>
+    <p>My supercool header</p>
+  </header>
 
-    <nav class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#sec1">RED</a>
-        <a href="#sec2">GREEN</a>
-        <a href="#sec3">BLUE</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-    </nav>
+  <nav class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#music">MUSIC</a>
+    <a href="#gallery">GALLERY</a>
+    <a href="#sec3">BIOGRAPHY</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </nav>
 
-    <main>
-        <section id="sec1" class="section1">RED</section>
-        <section id="sec2" class="section2">GREEN</section>
-        <section id="sec3" class="section3">BLUE</section>
+  <main>
+    <section id="music" class="section2">
+      <h2>My Music</h2>
+      <div class="song">
+        <h3>Song Title 1</h3>
+        <audio controls>
+          <source src="audio/song1.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="song">
+        <h3>Song Title 2</h3>
+        <audio controls>
+          <source src="audio/song2.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="image">
+        <img src="images/image1.jpg" alt="Image 1">
+      </div>
+      <div class="image">
+        <img src="images/image2.jpg" alt="Image 2">
+      </div>
+    </section>
+
+    <section id="sec3" class="section3">BLUE</section>
 
 
-        <section id="contact" class="contact_section">
-          <div style="text-align:center">
-            <h2>Contact Us</h2>
-            <p>Swing by for a cup of coffee, or leave us a message:</p>
-          </div>
-          
-          <div class="row"> <!--STYKIZED WITH FLOAT LAYOUT-->
-            <div class="column">
-              <img src="IMG-20211026-WA0020.jpeg" style="width:100%">
-            </div>
-            <div class="column">
-              <form action="/action_page.php">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-                <label for="country">Country</label>
-                <select id="country" name="country"> <!--CREATES A DROPDOWN MENU-->
-                  <option value="australia">Australia</option>
-                  <option value="canada">Canada</option>
-                  <option value="usa">USA</option>
-                </select>
 
-                <label for="subject">Subject</label> <!-- THE TEXT AREA-->
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
 
-                <input type="submit" value="Submit"> <!--THE GREEN SUBMIT BUTTON-->
-              </form>
-            </div>
-          </div>
-        </section>
-      <section>
-        <article></article>
-      </section>
-      <aside></aside>
-    </main>
-    
-    <footer id="about" class="footer">THIS IS THE FOOTER</footer>
-    
+    <section id="contact" class="contact_section">
+      <div style="text-align:center">
+        <h2>Contact Us</h2>
+        <p>Swing by for a cup of coffee, or leave us a message:</p>
+      </div>
+
+      <div class="row">
+        <!--STYKIZED WITH FLOAT LAYOUT-->
+        <div class="column">
+          <img src="IMG-20211026-WA0020.jpeg" style="width:100%">
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <!--CREATES A DROPDOWN MENU-->
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label> <!-- THE TEXT AREA-->
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+
+            <input type="submit" value="Submit">
+            <!--THE GREEN SUBMIT BUTTON-->
+          </form>
+        </div>
+      </div>
+    </section>
+    <section>
+      <article></article>
+    </section>
+    <aside>hey</aside>
+
+    <article>
+      <h2>Article Title</h2>
+      <p>Article content goes here...</p>
+    </article>
+
+    <aside>
+      <h3>Related Links</h3>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <footer id="about" class="footer">THIS IS THE FOOTER</footer>
+
 </body>
+
 </html>
