@@ -21,11 +21,7 @@
 </head>
 
 <body id="home">
-  <header class="header">
-    <h1>Header</h1>
-    <p>My supercool header</p>
-  </header>
-
+  
   <nav class="topnav">
 
     <!--adding the menu bars icon to the nav bar-->>
@@ -52,6 +48,14 @@
       </div>
     </div>
   </nav>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
+  
+  <script>
+    $(`.toggle i`).click(function() {
+        $(`ul`).toggleClass('show');
+    });
+  </script>
 
   <main>
     <section id="music" class="section1">
@@ -141,6 +145,8 @@
     </main>
 
   <footer id="about" class="footer">THIS IS THE FOOTER</footer>
+
+  
 
 </body>
 
