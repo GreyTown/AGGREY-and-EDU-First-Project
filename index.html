@@ -15,6 +15,9 @@
   <!--do we want to refresh the page?????-->
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- inorder for us to us social-media icons from 'font-awesome' this link has been added -->>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body id="home">
@@ -24,12 +27,30 @@
   </header>
 
   <nav class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#music">MUSIC</a>
-    <a href="#gallery">GALLERY</a>
-    <a href="#bio">BIOGRAPHY</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+
+    <!--adding the menu bars icon to the nav bar-->>
+    <label class="toggle">
+      <i class="fa fa-bars" ></i>
+    </label>
+
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#music">MUSIC</a></li>
+      <li><a href="#gallery">GALLERY</a></li>
+      <li><a href="#bio">BIOGRAPHY</a></li>
+      <li><a href="#contact">Contact</a></li> 
+      <li><a href="#about">About</a></li>     
+    </ul>
+    
+    <div class="social-top">
+      <div class="top-social">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-spotify"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>      
+      </div>
+    </div>
   </nav>
 
   <main>

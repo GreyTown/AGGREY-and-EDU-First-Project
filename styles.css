@@ -1,8 +1,34 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
+body {
+  background-color: #f1f1f1;
+}
+
+/* styling the menu "toggle" in the nav bar*/
+.toggle {
+  font-size: 30px;
+  color: #fff;
+  float: left;
+  line-height: 45px;
+  margin-left: 5%;
+  cursor: pointer;
+  display: none;
+}
+
+nav {
+  background-color: #000;
+  height: 45px;
+  width: 100%;
+}
+
+ul{
+  float:left;
+  margin-left: 5%;
+}
 
 /* STYLE THE HEADER*/
 .header {
