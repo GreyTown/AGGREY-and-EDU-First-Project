@@ -49,6 +49,10 @@
   float: right;
   /*margin-right: 5%;*/ /*deleted, I prefer bein on the right border*/
 }
+.social-top a:hover{
+  background-color: #333;
+  color: #FF7D00;
+}
 
 
 
@@ -62,7 +66,7 @@
 }
 
 .section2 {
-  display:inline;
+  /*display:inline;*/
   height: 400px;
   font-size: 40px;
   padding: 60px;
