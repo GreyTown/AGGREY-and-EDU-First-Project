@@ -66,12 +66,15 @@
 }
 
 .section2 {
-  /*display:inline;*/
-  height: 400px;
+  height: 800px;
   font-size: 40px;
   padding: 60px;
   text-align: center;
   background-color: rgb(21, 162, 23);
+}
+
+.photos div {
+  display: inline;
 }
 
 .section3 {
