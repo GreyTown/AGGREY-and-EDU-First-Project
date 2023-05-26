@@ -25,7 +25,7 @@
     <p>My supercool header</p>
   </header>
 
-  <nav class="topnav">
+  <nav id="navbar" class="topnav">
     <a class="active" href="#home">Home</a>
     <a href="#music">MUSIC</a>
     <a href="#gallery">GALLERY</a>
@@ -44,7 +44,7 @@
     </div>
   </nav>
 
-  <main>
+  <main class="content">
     <section id="music" class="section1">
       <h2>My Music</h2>
       <div class="song">
@@ -158,6 +158,33 @@
     </main>
 
   <footer id="about" class="footer">THIS IS THE FOOTER</footer>
+
+
+
+
+
+
+
+ <!--JAVASCRIPT FOR THE STICKY NAV-BAR-->
+  <script>
+   // When the user scrolls the page, execute myFunction
+   window.onscroll = function() {myFunction()};
+
+   // Get the navbar
+   var navbar = document.getElementById("navbar");
+
+   // Get the offset position of the navbar
+   var sticky = navbar.offsetTop;
+
+   // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+   function myFunction() {
+     if (window.pageYOffset >= sticky) {
+       navbar.classList.add("sticky")
+     } else {
+       navbar.classList.remove("sticky");
+     }
+   }
+  </script>
 
 </body>
 
