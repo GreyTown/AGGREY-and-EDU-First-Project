@@ -44,6 +44,12 @@
   color: white;
 }
 
+/*style the social-icons*/
+.social-top{
+  float: right;
+  /*margin-right: 5%;*/ /*deleted, I prefer bein on the right border*/
+}
+
 
 
 /* STYLE THE 3 COLOURED SECTIONS*/
