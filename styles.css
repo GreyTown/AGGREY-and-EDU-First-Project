@@ -14,7 +14,7 @@
 }
 
 
-/* STYLE THE TOP NAV BAR*/
+/* STYLE THE TOP NAV BAR*//*later sticky nav-bar*/
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -25,9 +25,10 @@
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
+  display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 24px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -44,11 +45,33 @@
   color: white;
 }
 
+/*style the social-icons*/
+.social-top{
+  float: right;
+  /*margin-right: 5%;*/ /*deleted, I prefer bein on the right border*/
+}
+.social-top a:hover{
+  background-color: #333;
+  color: #FF7D00;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
 
 
 /* STYLE THE 3 COLOURED SECTIONS*/
 .section1 {
-  height: 400px;
+  /*height: 700px;*/
   font-size: 40px;
   padding: 60px;
   text-align: center;
@@ -56,20 +79,24 @@
 }
 
 .section2 {
-  display:inline;
-  height: 400px;
+  /*height: 800px;*/
   font-size: 40px;
   padding: 60px;
   text-align: center;
   background-color: rgb(21, 162, 23);
 }
 
+.photos div {
+  display: inline;
+}
+
 .section3 {
-  height: 400px;
+  display: inline-block;
+  /*height: 400px;*/
   font-size: 40px;
   padding: 60px;
   text-align: center;
-  background-color: rgb(55, 35, 143);
+  background-color: rgb(104, 93, 152);
 }
 
 

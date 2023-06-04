@@ -25,55 +25,91 @@
     <p>My supercool header</p>
   </header>
 
-  <nav class="topnav">
+  <nav id="navbar" class="topnav">
     <a class="active" href="#home">Home</a>
     <a href="#music">MUSIC</a>
     <a href="#gallery">GALLERY</a>
     <a href="#bio">BIOGRAPHY</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
+
+    <div class="social-top"><!--NO HACIE FALTA 2 DIVS!!!!-->
+      <!--<div class="top-social">-->
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-spotify"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>      
+      <!--</div>-->
+    </div>
   </nav>
 
-  <main>
+  <main class="content">
     <section id="music" class="section1">
       <h2>My Music</h2>
       <div class="song">
-        <h3>Song Title 1</h3>
+        <h3>Tom Petty: 'I Won't Back Down'</h3>
         <audio controls>
-          <source src="audio/song1.mp3" type="audio/mpeg">
+          <source src="Audio/032. Tom Petty - I Won't Back Down.mp3" type="audio/mpeg">
         </audio>
       </div>
       <div class="song">
-        <h3>Song Title 2</h3>
+        <h3>Prince: 'Purple Rain'</h3>
         <audio controls>
-          <source src="audio/song2.mp3" type="audio/mpeg">
+          <source src="Audio/016. Prince - Purple Rain.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
         </audio>
       </div>
     </section>
 
     <section id="gallery" class="section2">
       <h2>Gallery</h2>
-      <div class="image">
-        <img src="Images/boat.jpeg" alt="boat" width="300" height="200">
-      </div>
-      <div class="image">
-        <img src="Images/evening.jpeg" alt="evening" width="300" height="200">
-      </div>
-      <div class="image">
-        <img src="Images/house.jpeg" alt="house" width="300" height="200">
-      </div>
-      <div class="image">
-        <img src="Images/jurere.jpg" alt="jurere" width="300" height="200">
-      </div>
-      <div class="image">
-        <img src="Images/river.jpg" alt="river" width="300" height="200">
-      </div>
-      <div class="image">
-        <img src="Images/sunrise.jpg" alt="sunrise" width="300" height="200"gi>
+      <div class="photos">
+        <div class="image">
+          <img src="Images/boat.jpeg" alt="boat" width="400" height="300">
+        </div>
+        <div class="image">
+          <img src="Images/evening.jpeg" alt="evening" width="400" height="300">
+        </div>
+        <div class="image">
+          <img src="Images/house.jpeg" alt="house" width="400" height="300">
+        </div>
+        <div class="image">
+          <img src="Images/jurere.jpg" alt="jurere" width="400" height="300">
+        </div>
+        <div class="image">
+          <img src="Images/river.jpg" alt="river" width="400" height="300">
+        </div>
+        <div class="image">
+          <img src="Images/sunrise.jpg" alt="sunrise" width="400" height="300">
+        </div>
       </div>
     </section>
 
-    <section id="bio" class="section3">BIOGRAPHY</section>
+    <section id="bio" class="section3">
+      <h1>BIOGRAPHY</h1>
+      <p>Who Was Tom Petty?
+        Rock musician Tom Petty began his career in earnest with a group called Mudcrutch.
+        After he and other members re-formed as Tom Petty and the Heartbreakers, the release of their self-titled 1976
+        debut started a decades-long and extremely successful run, highlighted by multi-platinum albums that featured the now-classic singles
+        “American Girl,” “Refugee,” “Don’t Come Around Here No More” and “Learning to Fly." In 1989, Petty embarked on an equally successful solo career,
+        delivering memorable music videos to hits like “Free Fallin’” and "Runnin' Down a Dream." Petty also collaborated with other legendary rockers,
+        including Stevie Nicks, Bob Dylan, George Harrison and Johnny Cash, earning three Grammy Awards for his work over the years.
+        
+        Early Life
+        Petty was born in Gainesville, Florida, on October 20, 1950, the first son of Earl and Kitty Petty.
+        Though he was close to his mother and younger brother, Petty had a difficult relationship with his father, who was often physically and
+        verbally abusive. But Petty found refuge in music, idolizing the likes of Elvis Presley and the Beatles and learning to play guitar.
+        
+        By high school, Petty’s passion for music was all-consuming. He began playing bass with a local group called the Epics, and at the
+        age of 17, he dropped out of school to perform with a new band that would become known as Mudcrutch, named after the farm where two
+         of its members lived. Petty quickly emerged as the frontman and primary songwriter in the group, which soon developed a devoted local following.
+        
+        The year 1974 proved a pivotal one for Petty, who married his girlfriend, Jane Benyo (with whom he already had a daughter, Adria),
+        before moving to Los Angeles with Mudcrutch in the hopes of reaching a wider audience. There, Petty and Benyo had their second
+        daughter, AnnaKim, and Mudcrutch signed to Shelter Records, but when their lone single went largely unnoticed, the group disbanded.
+        However, the label recognized Petty’s talent and offered him a solo contract. Within a few years, their confidence in him would be duly rewarded.</p>
+      </section>
 
 
 
@@ -122,6 +158,33 @@
     </main>
 
   <footer id="about" class="footer">THIS IS THE FOOTER</footer>
+
+
+
+
+
+
+
+ <!--JAVASCRIPT FOR THE STICKY NAV-BAR-->
+  <script>
+   // When the user scrolls the page, execute myFunction
+   window.onscroll = function() {myFunction()};
+
+   // Get the navbar
+   var navbar = document.getElementById("navbar");
+
+   // Get the offset position of the navbar
+   var sticky = navbar.offsetTop;
+
+   // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+   function myFunction() {
+     if (window.pageYOffset >= sticky) {
+       navbar.classList.add("sticky")
+     } else {
+       navbar.classList.remove("sticky");
+     }
+   }
+  </script>
 
 </body>
 
