@@ -15,7 +15,7 @@
   <!--do we want to refresh the page?????-->
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- inorder for us to us social-media icons from 'font-awesome' this link has been added -->>
+  <!-- inorder for us to us social-media icons from 'font-awesome' this link has been added -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -24,7 +24,7 @@
   
   <nav class="topnav">
 
-    <!--adding the menu bars icon to the nav bar-->>
+    <!--adding the menu bars icon to the nav bar-->
     <label class="toggle">
       <i class="fa fa-bars" ></i>
     </label>
@@ -58,46 +58,15 @@
   </script>
 
   <main>
-    <section id="music" class="section1">
-      <h2>My Music</h2>
-      <div class="song">
-        <h3>Song Title 1</h3>
-        <audio controls>
-          <source src="audio/song1.mp3" type="audio/mpeg">
-        </audio>
+    <section style=background-color:yellow>
+      <div id="bg">
+    
       </div>
-      <div class="song">
-        <h3>Song Title 2</h3>
-        <audio controls>
-          <source src="audio/song2.mp3" type="audio/mpeg">
-        </audio>
-      </div>
+      
     </section>
+    
 
-    <section id="gallery" class="section2">
-      <h2>Gallery</h2>
-      <div class="image">
-        <img src="Images/boat.jpeg" alt="boat" width="300" height="200">
-      </div>
-      <div class="image">
-        <img src="Images/evening.jpeg" alt="evening" width="300" height="200">
-      </div>
-      <div class="image">
-        <img src="Images/house.jpeg" alt="house" width="300" height="200">
-      </div>
-      <div class="image">
-        <img src="Images/jurere.jpg" alt="jurere" width="300" height="200">
-      </div>
-      <div class="image">
-        <img src="Images/river.jpg" alt="river" width="300" height="200">
-      </div>
-      <div class="image">
-        <img src="Images/sunrise.jpg" alt="sunrise" width="300" height="200"gi>
-      </div>
-    </section>
-
-    <section id="sec3" class="section3">BLUE</section>
-
+    
 
 
 
@@ -119,14 +88,11 @@
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="email">Contact Email</label>
+            <input type="text" id="email" name="email" placeholder="Your Email..">
 
             <label for="country">Country</label>
-            <select id="country" name="country">
-              <!--CREATES A DROPDOWN MENU-->
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
+            <select id="countries" name="countries"></select>
 
             <label for="subject">Subject</label> <!-- THE TEXT AREA-->
             <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
@@ -146,8 +112,11 @@
 
   <footer id="about" class="footer">THIS IS THE FOOTER</footer>
 
-  
+  <script src="/app.js"></script>
 
 </body>
 
 </html>
+
+
+
